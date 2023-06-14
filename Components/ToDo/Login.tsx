@@ -14,7 +14,6 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
   const [password, setPassword] = useState('');
 
   const handleLogin = () => {
-    // Perform login logic here
     if (username && password) {
       console.log('Logged in successfully');
     } else {
@@ -27,7 +26,6 @@ const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
       'https://www.facebook.com/v13.0/dialog/oauth?client_id=<YOUR_APP_ID>&redirect_uri=<YOUR_REDIRECT_URL>&scope=email',
     );
 
-    // Check the redirect URL and handle authentication here
     console.log('Facebook login redirect URL:', redirectUrl);
   };
 
